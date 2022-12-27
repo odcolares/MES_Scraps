@@ -1,0 +1,68 @@
+# Indentificar valores unicos.
+mes["Sintoma"].sort_values().unique()
+
+#Filtragem coluna X valor.
+mes.loc[mes['Sintoma'] == 'COMPONENTE_SMD_DESLOCADO']
+
+#1 Renomeando colunas
+Criando os novos nomes:
+Nova_variavel = {
+    nome_antigo : nome_novo,
+    nome_antigo : nome_novo
+}
+newdf = df_old.rename(columns = Nova_variavel)
+
+#2 Renomeando colunas
+NomeDatafreme.columns = ["Fornecedor", "Total"](Nome que serão refeito)
+
+#Renomeando valores.
+Metodo 01:
+mes['Sintoma'] = mes['Sintoma'].str.replace('CORFORADOPADRďż˝O', 'COJ.FORA_DO_PADRÃO', regex= False)
+
+Metodo 02:
+Usar unique() e visualizar valores,
+New_variavel = {
+    nome_antigo : nome_novo,
+    nome_antigo : nome_novo
+}
+
+dataset.coluna = dataset.coluna.map(New_variavel do Metodo 02)
+
+#Criando um novo Dataframe:
+nome = {
+    Chave : [valor],
+    Chave : [valor]
+}
+
+nome = pd.Dataframe(nome)
+
+#Consulta com Querys
+df_mes.query("Origem == 'Fornecedor'").Origem.count()
+
+#Criar um novo dataset com as alterações ja realizadas.
+NomeDataSet.to_csv("NomeDoArq.csv")
+
+#Imprimir as colunas
+dataset.columns.to_list()
+
+#Filtrar valor dentro da coluna
+dataset[dataset.coluna == "valores"]
+
+######  PROCESSO DE CRIAÇÃO E EDIÇÃO DE NOVAS COLUNAS ######
+
+# Descartando colunas com valor nulo para evitar erros (Se necessario)
+data.dropna(inplace = True)
+
+# Nova Data com Split das coluna "Name" separado por espaços
+new = data["Name"].str.split(" ", n = 1, expand = True)
+
+# Criando a Nova Coluna "First Name" com o new[0]
+data["First Name"]= new[0] 
+
+# Criando a Nova Coluna "Last Name" com o new[1]
+data["Last Name"]= new[1] 
+
+# Retirando a antiga coluna "Name" 
+data.drop(columns =["Name"], inplace = True)
+
+            #####FINAL DO PROCESSO######
